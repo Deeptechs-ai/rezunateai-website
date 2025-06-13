@@ -1,0 +1,40 @@
+<section class="bg-home" id="home">
+	<div class="bg-overlay"></div>
+	<div id="particles-js"></div>
+	<div class="home-center">
+		<div class="home-desc-center">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10 mt-5">
+						<div class="home-title text-center">
+							<h2 class="display-3">
+								<div id="typed-strings">
+									<p
+										*ngFor="
+											let typedElement of homeData[
+												'typedElement'
+											]
+										"
+									>
+										{{ typedElement }}
+									</p>
+								</div>
+								<span
+									id="element"
+									style="color: #022752"
+								></span>
+							</h2>
+							<h3
+								class="wow fadeInUpBig mx-auto para-desc"
+								data-wow-delay="0.5s"
+								style="color: #022752"
+							>
+								{{ homeData["introduction"] }}
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
