@@ -11,7 +11,7 @@
 					</div> -->
 					<h2 class="text-white h3">Contact Us</h2>
 					<p class="text-white-50 mx-auto mb-0 mt-4 para-desc">
-						Address, Phone Number and Email Address.
+						Our location and phone number.
 					</p>
 				</div>
 			</div>
@@ -50,6 +50,112 @@
 							>{{ links["title"] }}</a
 						>
 					</h3>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Form -->
+		<div class="row justify-content-center mt-5">
+			<div class="col-lg-10 col-xl-9">
+				<div class="contact-form-wrapper wow fadeInUp" data-wow-delay="0.2s">
+					<h3 class="text-white text-center mb-4">Send Us a Message</h3>
+
+					<!-- Success Message -->
+					<div *ngIf="submitSuccess" class="alert alert-success" role="alert">
+						<i class="fas fa-check-circle"></i> Your message has been sent successfully! We'll get back to you soon.
+					</div>
+
+					<!-- Error Message -->
+					<div *ngIf="submitError" class="alert alert-danger" role="alert">
+						<i class="fas fa-exclamation-circle"></i> {{ errorMessage }}
+					</div>
+
+					<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+						<!-- Name Field -->
+						<div class="form-group mb-4">
+							<label for="name" class="form-label text-white">Name *</label>
+							<input
+								type="text"
+								id="name"
+								formControlName="name"
+								class="form-control"
+								[class.is-invalid]="hasError('name', 'required') || hasError('name', 'minlength')"
+								placeholder="Your Name"
+							/>
+							<div class="invalid-feedback" *ngIf="hasError('name', 'required')">
+								Name is required
+							</div>
+							<div class="invalid-feedback" *ngIf="hasError('name', 'minlength')">
+								Name must be at least 2 characters
+							</div>
+						</div>
+
+						<!-- Email Field -->
+						<div class="form-group mb-4">
+							<label for="email" class="form-label text-white">Email *</label>
+							<input
+								type="email"
+								id="email"
+								formControlName="email"
+								class="form-control"
+								[class.is-invalid]="hasError('email', 'required') || hasError('email', 'email')"
+								placeholder="your.email@example.com"
+							/>
+							<div class="invalid-feedback" *ngIf="hasError('email', 'required')">
+								Email is required
+							</div>
+							<div class="invalid-feedback" *ngIf="hasError('email', 'email')">
+								Please enter a valid email address
+							</div>
+						</div>
+
+						<!-- Company Name Field (Optional) -->
+						<div class="form-group mb-4">
+							<label for="company" class="form-label text-white">Company Name</label>
+							<input
+								type="text"
+								id="company"
+								formControlName="company"
+								class="form-control"
+								placeholder="Your Company (Optional)"
+							/>
+						</div>
+
+						<!-- Message Field -->
+						<div class="form-group mb-4">
+							<label for="message" class="form-label text-white">Message *</label>
+							<textarea
+								id="message"
+								formControlName="message"
+								class="form-control"
+								[class.is-invalid]="hasError('message', 'required') || hasError('message', 'minlength')"
+								rows="5"
+								placeholder="Tell us about your inquiry..."
+							></textarea>
+							<div class="invalid-feedback" *ngIf="hasError('message', 'required')">
+								Message is required
+							</div>
+							<div class="invalid-feedback" *ngIf="hasError('message', 'minlength')">
+								Message must be at least 10 characters
+							</div>
+						</div>
+
+						<!-- Submit Button -->
+						<div class="text-center">
+							<button
+								type="submit"
+								class="btn btn-primary btn-submit"
+								[disabled]="contactForm.invalid || isSubmitting"
+							>
+								<span *ngIf="!isSubmitting">
+									<i class="fas fa-paper-plane"></i> Send Message
+								</span>
+								<span *ngIf="isSubmitting">
+									<i class="fas fa-spinner fa-spin"></i> Sending...
+								</span>
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

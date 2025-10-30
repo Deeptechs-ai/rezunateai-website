@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 
@@ -37,7 +39,11 @@ const routes: Routes = [{ path: '', component: ApplicationComponent }];
 	imports: [
 		RouterModule.forChild(routes),
 		CommonModule,
-		NgbTooltipModule
+		NgbTooltipModule,
+		ReactiveFormsModule
+	],
+	providers: [
+		provideHttpClient(withFetch())
 	]
 })
 export class ApplicationModule { }
