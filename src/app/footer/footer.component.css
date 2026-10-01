@@ -1,20 +1,6 @@
 .footer {
 	position: relative;
 }
-.footer-dev {
-	display: inline-block;
-	position: absolute;
-	right: 20px;
-	top: -2px;
-	transform-origin: center top;
-	transition: all 90ms;
-	cursor: pointer;
-	z-index: 1;
-}
-.footer-dev:hover {
-	transform: rotate(-4deg) !important;
-	overflow: hidden;
-}
 .copyright-desc {
 	background-color: #2A5782;
 	color: #fff;

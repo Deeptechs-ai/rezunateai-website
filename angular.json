@@ -37,9 +37,7 @@
 							"src/favicon-32x32.png",
 							"src/LICENSE",
 							"src/robots.txt",
-							"src/sitemap_index.xml",
-							"src/README.md",
-							"src/screenshots"
+							"src/sitemap_index.xml"
 						],
 						"styles": [
 							"src/assets/css/font-awesome.min.css",
