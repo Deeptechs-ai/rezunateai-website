@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1761858705926,
+  "timestamp": 1790878913747,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/248.7bc3fccbe4f6248d.js",
+        "/248.4763f8fd0636fbd5.js",
         "/872.ab81cf00338bef50.js",
         "/favicon.ico",
         "/index.html",
-        "/main.319bc5952d0c2ca3.js",
+        "/main.17a84066fd42a776.js",
         "/polyfills.9ea466fa38de155f.js",
-        "/runtime.b9b086794051a9aa.js",
-        "/scripts.79a3f58f33693773.js",
+        "/runtime.e5646053a2910a98.js",
+        "/scripts.50b519908606e07f.js",
         "/styles.32734ceca6572b19.css"
       ],
       "patterns": []
@@ -121,13 +121,13 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/248.7bc3fccbe4f6248d.js": "07a16dcb04c623484eb034eb794e5f6950a5068f",
+    "/248.4763f8fd0636fbd5.js": "eda70d7bfa74beddaf4b276136d2f03455b48d3b",
     "/404.4ed6dad8c73a710d.webp": "c55234174be110511c6fdf693770c8dde7f046c1",
     "/872.ab81cf00338bef50.js": "1151d33e8468841da17f4f36aee53b2b1ec2babd",
     "/apple-touch-icon.png": "8218fb45b26dea0f140a388bcc06c918d08f1d1d",
     "/assets/css/animate.min.css": "4ce4e9a3c083a51cc474b62f755108b9c81e5881",
     "/assets/css/font-awesome.min.css": "db3c436a1c87b1fd43a10e820ad628f93df90bce",
-    "/assets/data.min.js": "b59ed38a872a0a35dc616e7b54fe80513e49fe5a",
+    "/assets/data.min.js": "9bbe55f9a2572ea4f178b7341574913c25222b38",
     "/assets/fonts/BlackOpsOne.eot": "a922adecfeba3ea43f4e644183728cdd1692dbb4",
     "/assets/fonts/BlackOpsOne.svg": "7c13e5df4822e44cfe78f1291757ef7fc4af6d8a",
     "/assets/fonts/BlackOpsOne.ttf": "024e07e45eefb57d4e55fffc082711c2d653e941",
@@ -207,12 +207,12 @@
     "/favicon-16x16.png": "897f537be9e5741b714b45fab9d24a28830f22bd",
     "/favicon-32x32.png": "053c8fbd3b9a6acc1b02f32172933ddad15cb0c9",
     "/favicon.ico": "61ea5e23b3647a514301fbc841632aa209c0902f",
-    "/index.html": "6ff8a29feb15af6c57755d903bf204aeaeb86950",
-    "/main.319bc5952d0c2ca3.js": "340fad17ddf868d66deea94d9236057bb78cf0ee",
+    "/index.html": "4a42a1162515f9b387a5a00c297a7d7dcdbd30ab",
+    "/main.17a84066fd42a776.js": "11ff70ba9e506ddbc1350b77d3fefe5c7c0190e1",
     "/polyfills.9ea466fa38de155f.js": "4934356d956b73b0b5315f3931f79fb2e6189a06",
     "/quote-img.5e642c8eee792695.webp": "27936458251d3dbc6d1eecfc1e501ab93a3838bb",
-    "/runtime.b9b086794051a9aa.js": "cc85c4aafbf2a36c55e1fc6b357cf70d05fdb395",
-    "/scripts.79a3f58f33693773.js": "4820ba668002a042900b2c156f351cc9275e6608",
+    "/runtime.e5646053a2910a98.js": "3ecd698d442e33b3220fe16310fe7520cc86efa5",
+    "/scripts.50b519908606e07f.js": "38afdbb7c1da9be673f91bc574f85bad0526ec39",
     "/styles.32734ceca6572b19.css": "429ba7ad29d2e44bf25b26091a927b688cc3df7a"
   },
   "navigationUrls": [
